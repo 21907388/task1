@@ -1,0 +1,21 @@
+.buttonMiddle{
+    width:1152px;
+    height : 76px;
+    background:#EAECF0;
+    padding: 10;
+  border: none;
+  border-radius: 5;
+  margin: 3;
+    
+};
+.divs{
+    align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+};
+.image1{
+    width: 88; 
+    height: 88;
+    border-radius: 400/ 2;
+}
