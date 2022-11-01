@@ -8,8 +8,8 @@ import vector from './vector.PNG'
 import zuri from './zuri.png'
 
 const btnStyles={
-    width:'1152px',
-    height : '76px',
+    width:'80%',
+    height : '7%',
     backgroundColor:'#EAECF0',
     padding: 10,
   border: 'none',
@@ -43,6 +43,7 @@ const maintextStyle={
 const footStyle={
   display: 'flex',
   justifyContent: 'space-around',
+  marginBottom: '20px'
 
 
 }
@@ -104,9 +105,9 @@ const Middle=()=>
 
 const Footer=()=>
 <div style={footStyle} className='foot' >
-<img src={zuri} alt='zuri' style={{width: 150, height: 50}} className='iamgesTwo'/>
-<h2 style={{fontSize: 18, color: 'gray'}}> HNG Internship 9 Frontend Task </h2>
-<img src={foot} alt='foot' style={{width: 150, height: 30, }} classeName='imagesThree'/>
+<img src={zuri} alt='zuri' style={{width: '15%', height: '7%'}} className='iamgesTwo'/>
+<h2 style={{fontSize: '60%', color: 'gray'}}> HNG Internship 9 Frontend Task </h2>
+<img src={foot} alt='foot' style={{width: '15%', height: '5%' }} classeName='imagesThree'/>
 </div>
 
 const HexaColor=()=>(
