@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom'
 import {TfiShare} from 'react-icons/tfi'
 import image from './profile.jpg'
 import icone from './Icon.png'
-import foot from './foot.png'
 import vector from './vector.PNG'
-import zuri from './zuri.png'
+import Footer from './foot'
+
 
 const btnStyles={
-    width:'80%',
+    width:'90%',
     height : '7%',
     backgroundColor:'#EAECF0',
     padding: 10,
@@ -27,7 +27,7 @@ const linkStyles={
 }
 const textStyle={
   fontFamily:'Verdana',
-  fontSize:'18px',
+  fontSize:'15px',
   fontWeight:'500',
   fontStyle:'normal',
   color: '#101828'
@@ -40,13 +40,7 @@ const maintextStyle={
   color: '#101828',
   marginBottom: '50px'
 }
-const footStyle={
-  display: 'flex',
-  justifyContent: 'space-around',
-  marginBottom: '20px'
 
-
-}
 const iconStyle={
   marginLeft: '80%',
   borderRadius: '50%',
@@ -74,27 +68,32 @@ const Middle=()=>
 <div style={linkStyles} flex='auto' classeName='divs'>
 <a href='https://training.zuri.team/'target="_blank" rel="noreferrer" >
           <button style={btnStyles} id="btn__zuri" className='buttonMiddle'>
-          <h2 style={textStyle} className='text'>Zuri Team</h2>
+          <h2 className='text'>Zuri Team</h2>
+          
             </button>
         </a><p></p>
 <a href='http://books.zuri.team'target="_blank" rel="noreferrer" >
           <button style={btnStyles} id="books" className='buttonMiddle'>
-            <h2 style={textStyle} className='text'>Zuri Books</h2>
+            <h2  className='text'>Zuri Books</h2>
+            <h3 style={textStyle}> Find books about Design and Coding</h3>
             </button>
         </a><p></p>
 <a href='https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>'target="_blank" rel="noreferrer" >
           <button style={btnStyles} id="book__python" className='buttonMiddle'>
-          <h2 style={textStyle} className='text'>Python Books</h2>
+          <h2  className='text'>Python Books</h2>
+          <h3 style={textStyle}> Buy Dan's book on Python</h3>
             </button>
         </a><p></p>
 <a href='https://background.zuri.team'target="_blank" rel="noreferrer" >
           <button style={btnStyles} id="pitch" className='buttonMiddle'>
-          <h2 style={textStyle} className='text'>Bakground Check for Coders</h2>
+          <h2 className='text'>Bakground Check for Coders</h2>
+          <h3 style={textStyle}> Find out more information about your developers</h3>
             </button>
         </a><p></p>
 <a href='https://books.zuri.team/design-rules'target="_blank" rel="noreferrer" >
           <button style={btnStyles} id="book__design" className='buttonMiddle'>
-          <h2 style={textStyle} className='text'>Design Books</h2>
+          <h2 className='text'>Design Books</h2>
+          <h3 style={textStyle}> Get a freee Design for your book, courtsey Zuri</h3>
             </button>
         </a>
         <div style={{padding:35, marginBottom: 100}} className='divBottom'>
@@ -103,12 +102,8 @@ const Middle=()=>
         </div>
 </div>
 
-const Footer=()=>
-<div style={footStyle} className='foot' >
-<img src={zuri} alt='zuri' style={{width: '15%', height: '7%'}} className='iamgesTwo'/>
-<h2 style={{fontSize: '60%', color: 'gray'}}> HNG Internship 9 Frontend Task </h2>
-<img src={foot} alt='foot' style={{width: '15%', height: '5%' }} classeName='imagesThree'/>
-</div>
+
+
 
 const HexaColor=()=>(
   <div>
@@ -117,6 +112,7 @@ const HexaColor=()=>(
     <Footer/>
   </div>
 )
+
 const rootElement = document.getElementById('root')
 
 ReactDOM.render(<HexaColor/>, rootElement)
